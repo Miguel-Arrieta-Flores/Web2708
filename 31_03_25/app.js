@@ -76,7 +76,7 @@ function buscarProductos(){
                 break;
             case 2:
                 let num=parseInt(prompt("Ingrese el numero del producto: "))
-                if (num>0 && num<inventario.length) {    
+                if (num>0 && num<=inventario.length) {    
                     alert(`Producto: ${num} \n`+
                         `Nombre: ${inventario[num-1].nombre} \n`+
                         `Cantidad: ${inventario[num-1].cantidad} \n`+
