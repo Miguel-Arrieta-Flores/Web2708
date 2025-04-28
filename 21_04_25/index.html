@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WhatsApp</title>
+    <link rel="stylesheet" href="estilo.css">
+</head>
+<body>
+    <div class="cuadro">
+        <header>
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/6b/WhatsApp.svg/1022px-WhatsApp.svg.png" alt="logo">
+            <h1>WhatsApp</h1>
+        </header>
+        <div class="general">
+            <div>
+                <label for="numTel">Numero Telefonico:</label><br>
+                    <input class="entrada" type="number" required maxlength="12" placeholder="Numero Telefonico" id="numTel">
+            </div>
+            <div style="margin-top: 20px;">
+                <label for="sms">Mensaje:</label><br>
+                    <textarea class="entrada" name="Mensaje" id="mensaje" rows="5" required placeholder="Escribe tu mensaje :D"></textarea>
+            </div>
+            <div>
+                <button class="buttonChat" onclick="generar()">Generar Chat</button>
+            </div>
+        </div>
+    </div>
+</body>
+<script src="app.js"></script>
+</html>
