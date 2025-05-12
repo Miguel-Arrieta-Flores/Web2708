@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ruta 3</title>
+</head>
+<style>       
+    body{
+        background-color: rgb(55, 146, 63);
+    }
+
+    header {
+        width: 300px;
+        margin: 20px;
+        color: rgb(37, 211, 102);
+        font-family: 'Helvetica Neue', Arial, sans-serif;
+        display: flex;
+        flex-direction: row;
+    }
+
+    header img{
+        width: 80px;
+    }
+
+    textarea{
+        height: 150px;
+        width: 400px;
+    }
+
+    button{
+        border-radius: 5px;
+        padding: 8px;
+        color: rgb(224, 241, 219);
+        font-weight: bold;
+        text-shadow: 2px 2px black;
+        background-color: rgb(16, 128, 55);
+        font-family: 'Helvetica Neue', Arial, sans-serif;
+        border: none;
+        cursor: pointer;
+    }
+
+    .general{
+        width: 450px;
+        margin: 10px;
+        padding: 5px;
+        border-radius: 5px;
+        font-family: 'Helvetica Neue', Arial, sans-serif;
+    }
+
+    .entrada{
+        margin: 4px 0 6px 0;
+        font-size: 14px;
+        border-radius: 12px;
+        padding: 8px;
+        border-width: 3px;
+        border-color: black;
+    }
+
+    .cuadro{
+        background-color: rgb(241, 237, 237);
+        border-radius: 12px;
+        width: 450px;
+        margin: 50px auto;
+        padding: 15px;
+        box-shadow: 10px 40px 40px rgba(0, 0, 0, 0.2);
+    }
+
+     /*Footer*/
+    footer h4{
+    margin-bottom: -15%;
+    }
+    
+    .datos{
+        background-color: #FCBD1C;
+        height: 50px;
+        text-align: center;
+        display: flex;
+        font-size: 20px;
+        justify-content: space-around;
+        padding: 15px;
+    }
+
+    .firma{
+        height: 60px;
+        padding-top: 20px;
+        text-align: center;
+        font-size: 15px;
+        box-shadow: 2px 0 5px  black;
+    }
+</style>
+<body>
+    <div class="cuadro">
+        <header>
+            <img src="https://store-images.s-microsoft.com/image/apps.38456.9007199267003607.4d66cde1-46fd-42b7-93c7-e05d782f5e5d.cfdf91f5-dc2a-4178-96fa-d2c156ae62cd" alt="logo">
+            <h1>Duolingo</h1>
+        </header>
+        <div class="general">
+            <div>
+                <label for="numTel">Tu racha (Num. Dias):</label><br>
+                    <input class="entrada" type="number" required maxlength="12" placeholder="Numero Telefonico" id="numTel">
+            </div>
+            <div style="margin-top: 20px;">
+                <label for="sms">Nombre de tus mascotas:</label><br>
+                    <textarea class="entrada" name="Mensaje" id="mensaje" rows="5" required placeholder="Escribe tu mensaje aqui"></textarea>
+            </div>
+            <div>
+                <button class="buttonChat" onclick="generar()">Generar Chat</button>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <div class="datos">
+            <p>Miguel Angel Arrieta Flores</p>
+            <p>Programacion Web II</p>
+        </div>
+        <div class="firma">
+            <p>©2025 DISEÑADO POR MIGUEL ARRIETA | </p> 
+        </div>
+    </footer>
+</body>
+</html>

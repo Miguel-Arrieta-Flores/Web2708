@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ruta4</title>
+</head>
+<style>
+       *{
+    margin: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+    font-family: "Nunito", sans-serif;
+    font-weight: 700;
+    }
+
+    body{
+        background-color: #AFDDFF;
+        display: flex;
+        flex-direction: column;
+        min-height: 100vh;
+        text-align: center;
+    }
+
+    h1{
+        font-family: "Carter",sans-serif;
+        font-size: 100px;
+        font-weight: bolder;
+    }
+
+    h2{
+        font-family: "Carter", serif;
+        font-size: 35px;
+        margin-bottom: 15px;
+        text-shadow: -1px -1px 3px #1C58FC, 1px 1px 3px #1C58FC, -1px 1px 3px #1C58FC, 1px -1px 3px #1C58FC;
+        -webkit-text-fill-color: #FCDB00;
+        -webkit-text-stroke: 0.001pt #1C58FC;
+    }
+
+    h3{
+        font-family: "Nunito", cursive;
+        font-size: 27px;
+        margin-bottom: 10px;
+        text-shadow: -1px -1px 5px #1C58FC, 1px 1px 5px #1C58FC, -1px 1px 5px #1C58FC, 1px -1px 5px #1C58FC;
+        -webkit-text-fill-color: #FCDB00;
+        -webkit-text-stroke: 0.001pt #1C58FC;
+    }
+
+    .presentacion{
+    padding: 15px 10px;
+    padding-bottom: 0;
+    text-align: center;
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+    ) ,url(img/background/separatorTitle.jpg);
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    border: 3px solid #000;
+    }
+
+    .presentacion p{
+        font-weight: 600;
+        font-size: 15px;
+        margin-bottom: 10px;
+        -webkit-text-fill-color: #fff;
+    }
+
+    /*Pagina*/
+    .menuContacto{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: justify;
+        padding: 25px 5%;
+    }
+
+    .menuContacto h4{
+        color: #c5c6c1;
+        font-size: 25px;
+        margin-bottom: 15px;
+        text-align: center;
+        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        text-shadow: -1px -1px 2px #000, 1px 1px 2px #000, -1px 1px 2px #000, 1px -1px 2px #000;
+        border-radius: 15px;
+        margin-bottom: 20px;
+        background-color: #2f3f6b;
+    }
+
+    .menuContacto p{
+        color: #000;
+        margin-bottom: 10px;
+        text-align: center;
+        font-size: 21px;
+    }
+
+    .menuContacto .content{
+        display: flex;
+        flex-direction: row;
+        padding-top: 20px;
+        margin-left: -20px;
+        max-width: 100%;
+    }
+
+    .menuContacto .content .metodo{
+        max-width: 100%;
+        margin: 20px;
+        text-align: center;
+    }
+
+     /*Footer*/
+    footer h4{
+    margin-bottom: -15%;
+    }
+    
+    .datos{
+        background-color: #FCBD1C;
+        height: 50px;
+        text-align: center;
+        display: flex;
+        font-size: 20px;
+        justify-content: space-around;
+        padding: 15px;
+    }
+
+    .firma{
+        height: 60px;
+        padding-top: 20px;
+        text-align: center;
+        font-size: 15px;
+        box-shadow: 2px 0 5px  black;
+    }
+</style>
+
+<body>
+    <div class="contacto">
+        
+     <!--
+            Informacion relevante para el cliente
+        -->
+       
+        <div class="presentacion" id="info">
+            <div class="content">
+                <h2>NUESTRO OBJETIVO ES QUE TENGAS UN BUEN SERVICIO</h2>
+            </div>
+        </div>
+
+        <div class="menuContacto">
+            <p>Aquí encontrarás todo lo que necesitas para disfrutar al máximo tu experiencia con GeekToon: detalles sobre nuestros métodos de pago, políticas de envío y devoluciones, preventas exclusivas, lanzamientos próximos, así como atención personalizada a través de nuestros canales de contacto. <br> Además, puedes suscribirte a nuestro boletín para recibir promociones especiales, noticias del mundo geek y descuentos únicos. 
+            <br>¡Estamos aquí para ayudarte a encontrar esa figura que llevas tiempo buscando!</p>
+            <div class="content">
+                <div class="metodo">    
+                    <h4>Métodos de pago:</h4> 
+                    <p>
+                        - Aceptamos tarjetas de crédito y débito (Visa, MasterCard, AMEX).  <br>
+                        - Pagos por transferencia bancaria o en tiendas de conveniencia.  <br>
+                        - Opción de pago contra entrega en puntos específicos
+                    </p> 
+                        
+                </div>
+                <div class="metodo">
+                    <h4>Envíos y devoluciones:</h4>  
+                    <p>
+                        - Envíos a todo México con distintas paqueterías.  <br>
+                        - Tiempo de entrega estimado: 3 a 5 días hábiles.  <br>
+                        - Devoluciones aceptadas dentro de los primeros 7 días si el producto presenta defectos de fábrica o fue entregado incorrectamente. 
+                    </p>
+                   
+                </div>
+                
+                <div class="metodo">
+                    <h4>Preventas y lanzamientos:</h4>  
+                    <p>
+                        - Acceso anticipado a figuras en preventa. <br>  
+                        - Fechas de lanzamiento y apartados disponibles en tienda física o línea.  <br>
+                        - Opciones para apartar con anticipo.
+                    </p>
+                   
+                </div>
+                
+                <div class="metodo">
+                    <h4>Promociones y suscripciones:</h4>  
+                    <p>
+                        - Descuentos exclusivos para suscriptores del boletín.  <br>
+                        - Acceso a promociones por temporada, aniversarios y eventos especiales.  <br>
+                        - Notificaciones sobre nuevos ingresos y colecciones.
+                    </p>
+                   
+                </div>
+                    
+            </div>
+            <div class="atencion">
+                <h4>Atención al cliente:</h4>
+                    <p>
+                        Soporte por correo electrónico, WhatsApp y redes sociales:  <br>
+                        Correo: geektoonService@yopmail.com <br>
+                        Numero de telefono: 55545551402 <br>
+                        Facebook: htttps://facebook.GeekToon.com <br>
+                        <br>
+                        Horario de atención: <br>
+                        Lunes a Sábado de 10:00 a 19:00 hrs.  <br> 
+                        <br>
+                        Personal capacitado para ayudarte con cualquier duda sobre productos o pedidos. 
+                    </p>  
+               
+            </div>
+     
+
+        </div>
+
+        <div class="presentacion" id="sucursales">
+            <div class="content"> <!--Contenedor para el texto -->
+                <h2>NUESTRAS SUCURSALES</h2>
+                <p>Ven a visitarnos</p>
+            </div>
+        </div>
+
+    </div>
+
+    <footer>
+        <div class="datos">
+            <p>Miguel Angel Arrieta Flores</p>
+            <p>Programacion Web II</p>
+        </div>
+        <div class="firma">
+            <p>©2025 DISEÑADO POR MIGUEL ARRIETA | </p> 
+        </div>
+    </footer>
+</body>
+</html>
